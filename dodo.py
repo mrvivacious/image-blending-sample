@@ -22,3 +22,6 @@ def task_unzip():
   return {'actions': actions,
           'file_dep': file_dep,
           'targets': targets}
+
+  def task_blend():
+      return {'actions': [['python', 'image_blender.py']],
